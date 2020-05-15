@@ -13,7 +13,7 @@ First step is easy, open powershell as admin and type this command
 
 ```dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart```
 
-Once thats complete go to the Microsoft Appstore, download and install Ubuntu, then launch it. You should now be seeing a linux terminal  Setup a username and password and we are ready to start for real.
+Once thats complete go to the Microsoft Appstore, download and install Ubuntu, then launch it. You should now be seeing a linux terminal. Setup a username and password and we are ready to start for real.
 
 ## Step 2 Install Python and Pip
 
