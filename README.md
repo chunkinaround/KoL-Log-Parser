@@ -67,4 +67,35 @@ https://jupyter.readthedocs.io/en/latest/architecture/how_jupyter_ipython_work.h
 
 
 Otherwise lets just get to the good stuff.
-If you click on KOLMafia RunLog Generator (v1.0).ipynb from within your jupyter notebook it will take you to a screeh with a bunch of Text boxes, each of these boxes can be run individually by clicking the run button, labled so, at the top of your screen. 
+If you click on KOLMafia RunLog Generator (v1.0).ipynb from within your jupyter notebook it will take you to a screeh with a bunch of boxes (hereafter cells), each of these boxes can be run individually by clicking the run button, labled so, at the top of your screen. 
+
+First you need to actually get your logs to a location that we can access them. Copy your logs somewhere onto your machine using the explorer.exe method mentioned above. If you are following along exactly with me I created a KoL folder in the same directory as my environment was set up in. Which would be:```/home/tbh/parser/parser/KoL/sessions```
+
+Next in the cell starting with ``` class newLogParser():``` make sure to fill out the appripriate variables for:
+```
+            kolmafDir = '/home/tbh/parser/parser/KoL/',
+            outputDir = '/home/tbh/parser/parser/KoL/',
+            kolName   = 'threebullethamburgler',
+```
+
+Finally you need to run at least these cells, order matters.:
+ ```
+ import requests
+ def zoneInformation(mafEnc,mafCom):
+ # To minimize server hits, grab a few files from the Mafia SVN data
+ class newLogParser():
+ def resourcesByZone(log)
+ ```
+
+ After that just use the following formula:
+ 
+ ```
+runlog = newLogParser(runDates=['20200510','20200511','20200512','20200513'],zInfo=zoneInfo).prepareNewLog()
+resourcesByZone(runlog).to_csv('runlogLocationSummary.csv')
+ ```
+ Filling in appropriate run dates for the session logs provided. It should create 2 files, one for the turn by turn summary and a second location summary that breaks down resources by zone. 
+ 
+ 
+ # TODO
+ Fix Output directory handling
+ Finish supporting current IoTM
