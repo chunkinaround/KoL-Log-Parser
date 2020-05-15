@@ -61,6 +61,10 @@ http://localhost:8888/?token=biglongstringornumbersandletter123456789
 When you are ready to stop the notebook navigate back to your Ubuntu terminal and just hit CTRL+C
 
 # What about the gosh darned parsing?
-If you want to know more about how Jupyter works, go here:https://jupyter.readthedocs.io/en/latest/architecture/how_jupyter_ipython_work.html
+If you want to know more about how Jupyter works, go here:
+
+https://jupyter.readthedocs.io/en/latest/architecture/how_jupyter_ipython_work.html
+
+
 Otherwise lets just get to the good stuff.
 If you click on KOLMafia RunLog Generator (v1.0).ipynb from within your jupyter notebook it will take you to a screeh with a bunch of Text boxes, each of these boxes can be run individually by clicking the run button, labled so, at the top of your screen. 
