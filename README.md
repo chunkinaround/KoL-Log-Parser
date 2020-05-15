@@ -98,4 +98,5 @@ resourcesByZone(runlog).to_csv('runlogLocationSummary.csv')
  
  # TODO
  Fix Output directory handling
+ 
  Finish supporting current IoTM
